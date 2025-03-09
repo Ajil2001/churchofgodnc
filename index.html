@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/Logo png.png">
+    <title>Church of God NC</title>
+  
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="hero">
+    <!-- Navigation -->
+    <div class="navbar">
+        <img src="images/logo - Copy.svg" alt="Logo" class="logo">
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Meetings</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Text Slider -->
+    <div class="slider-container">
+        <div class="slides active">
+            <p class="slider-text">NORTH CAROLINA ലെ  RALEIGH പട്ടണത്തിൽ ദൈവത്തെ സത്യത്തിലും ആത്മാവിലും ആരാധിപ്പാൻ ഒരു കൂട്ടായ്മ</p>
+        </div>
+        <div class="slides">
+            <p class="slider-text">Professional and Engaging Content</p>
+        </div>
+        <div class="slides">
+            <p class="slider-text">Boost Your Brand with Quality Writing</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        const hamburger = document.querySelector('.hamburger');
+        const hero = document.querySelector('.hero');
+        const sliderContainer = document.querySelector('.slider-container');
+
+        navLinks.classList.toggle('show');
+        hero.classList.toggle('stretch');
+        sliderContainer.classList.toggle('move-down');
+
+        if (navLinks.classList.contains('show')) {
+            hamburger.innerHTML = '&times;'; // Close icon
+            hamburger.classList.add('close');
+        } else {
+            hamburger.innerHTML = '&#9776;'; // Hamburger icon
+            hamburger.classList.remove('close');
+        }
+    }
+
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".slides");
+
+    function changeSlide(direction) {
+        slides[currentSlide].classList.remove("active");
+        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+        slides[currentSlide].classList.add("active");
+    }
+
+    setInterval(() => changeSlide(1), 3000); // Auto-slide every 3 seconds
+</script>
+
+</body>
+</html>
