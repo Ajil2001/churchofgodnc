@@ -19,7 +19,7 @@
 
         body {
             font-family: Arial, sans-serif;
-            color: #fff;
+        
            
         }
 
@@ -108,7 +108,7 @@
         }
 
         .slider-text {
-            font-size: 32px;
+            font-size: 25px;
             font-weight: bold;
         }
 
@@ -181,6 +181,108 @@
 }
 		
 		
+section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 		
-		
-		
+.row{
+    max-width: 1200px;
+    margin: auto;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.col{
+    flex:1 1 250px;
+    padding:15px;
+    margin: 10px;
+}
+
+
+.about{
+	color:#222;
+}
+
+.about h2{
+	margin-left:1%;
+	font-size: 30px;
+}
+
+
+.underline {
+    width: 110px;  /* Adjust width as needed */
+    height: 2px;  /* Thickness of the line */
+    background-color: #222;  /* Change color as needed */
+    border: none;
+    
+}
+
+
+
+
+
+.btn1{
+	background-color: #AD2A0C;
+    color: #FFFFFF;
+    padding: 10px 20px;
+	border-radius: 5px;
+
+}
+.btn1:hover{
+	opacity: 80%;
+}
+	
+
+
+.table-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            margin: 0 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-right: 1px solid #ddd;
+        }
+        th:last-child, td:last-child {
+            border-right: none;
+        }
+        th {
+            background-color: #AD2A0C;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        tbody tr:not(:last-child) td {
+            border-bottom: 1px solid #ddd;
+        }
+       
+
+
+       .meetings {
+    padding-top: 80px;
+	padding-bottom: 80px;
+	background-image: url( "images/body_bg.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+
+.underline2 {
+    width: 150px;  /* Adjust width as needed */
+    height: 2px;  /* Thickness of the line */
+    background-color: #222;  /* Change color as needed */
+    border: none;
+    
+}
+
